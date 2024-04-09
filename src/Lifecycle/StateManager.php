@@ -68,6 +68,7 @@ class StateManager
 
         if ($state = $this->states->get($key)) {
             ray('statefound');
+
             return $state;
         }
 

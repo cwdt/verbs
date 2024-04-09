@@ -138,6 +138,7 @@ abstract class State implements UrlRoutable
     public function __get($name)
     {
         $name = Str::camel($name);
+
         return $this->$name();
     }
 }
